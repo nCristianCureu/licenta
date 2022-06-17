@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --bar: rgb(88, 88, 88);
+}
+
+/* Navbar Admin Style */
+.nav-admin {
+  background: rgb(88, 88, 88);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+}
+.title {
+  margin-left: 3rem;
+}
+.nav-items-admin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-icon {
+  color: white;
+  transform: scale(1.1);
+}
+.nav-icon:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-items-admin li {
+  list-style: none;
+  margin-right: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.logout {
+  background: rgb(88, 88, 88);
+  color: white;
+  border: 2px solid white;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.logout:hover {
+  color: rgb(88, 88, 88);
+  background: white;
+}
+
+/* SideBar Admin + Content */
+.sidePlusContent {
+  display: flex;
+  overflow: hidden;
+}
+
+/* SideBar Admin Style */
+.side-nav-and-footer {
+  position: relative;
+  min-width: 20vw;
+  min-height: 90vh;
+  background: rgb(102, 102, 102);
+  
+}
+.side-nav {
+  font-size: 18px;
+  position: relative;
+}
+
+.side-nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(235, 235, 235, 0.8);
+}
+.side-nav a:hover {
+  color: rgb(240, 240, 240);
+}
+.side-nav-list,
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+}
+.li {
+  list-style: none;
+  margin: 1rem 0rem;
+}
+
+.side-nav-list li ul {
+  opacity: 0;
+  display: none;
+  font-size: 16px;
+  list-style: none;
+  margin-top: 1rem;
+}
+.side-nav-list li ul:hover,
+.side-nav-list li:focus-within > ul {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 1s ease;
+}
+.dropdown {
+    display: flex;
+    
+}
+.dropdown-item {
+    margin-top: 1rem;
+}
+
+.footer {
+  min-width: 20vw;
+  position: absolute;
+  bottom: 0px;
+  background: rgb(92, 92, 92);
+  color: rgba(235, 235, 235, 0.7);
+  font-size: 14px;
+  
+}
+
+/* Content style */
+.admin-content {
+  min-width: 80vw;
+  
+}

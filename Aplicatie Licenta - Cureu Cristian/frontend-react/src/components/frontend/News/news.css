@@ -1,0 +1,7 @@
+.icon {
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+.icon:hover {
+    transform: scale(1.15);
+}

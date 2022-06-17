@@ -1,0 +1,71 @@
+
+.carousel {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 80vh;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+}
+.carousel img {
+    width: 100%;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.7s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indicators {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+}
+
+.indicators > button {
+    margin: 10px;
+    padding: .3rem;
+    border: 1.5px solid white;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+
+}
+.indicators > button.active {
+    background-color: white;
+}
+
+.arrows {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+
+}
+ .arrows button {
+     border: none;
+     background: none;
+     cursor: pointer;
+     transform: scale(3.5);
+     color: rgb(255, 255, 255);
+     opacity: 0.5;
+     transition: all 0.3s ease;
+ }
+
+ .arrows button:hover {
+    opacity: 0.7;
+}

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  margin: 1rem 0rem;
+}
+
+.form-group input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+.formImage input {
+  margin-left: 6rem;
+}
+
+.label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+
+.content {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.4s ease;
+}
+
+.form-group input:focus + .label .content,
+.form-group input:valid + .label .content {
+  transform: translateY(-130%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.form-group input:focus + .label::after,
+.form-group input:valid + .label::after {
+  transform: translateX(0%);
+}
+.textareaDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+}
+.textarea {
+  width: 360px;
+  height: 100px;
+}
+.textarea:focus {
+  outline: none !important;
+  border: 1.5px solid #5fa8d3;
+  box-shadow: 0 0 5px #5fa8d3;
+}
